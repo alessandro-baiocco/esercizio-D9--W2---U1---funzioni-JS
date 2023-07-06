@@ -169,9 +169,10 @@ const UpperFirst = function (str1) {
     finalString.push(finalWord);
   }
   console.log(finalString.join(" "));
+  return finalString;
 };
 
-UpperFirst("ciao mondo");
+console.log(UpperFirst("ciao mondo"));
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
