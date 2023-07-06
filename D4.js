@@ -41,14 +41,14 @@ console.log("esercizio 2 :", crazySum(2, 6), crazySum(2, 2));
 /* SCRIVI QUI LA TUA RISPOSTA */
 const crazyDiff = function (val1, val2 = 19) {
   if (val1 > 19) {
-    opeExer3 = Math.floor((val1 - val2) * 3);
+    opeExer3 = Math.abs((val1 - val2) * 3);
   } else {
-    opeExer3 = Math.floor(val1 - val2);
+    opeExer3 = Math.abs(val1 - val2);
   }
   return opeExer3;
 };
 
-console.log("esercizio 3 :", "se 39 : ", crazyDiff(39), "se 10.6 : ", crazyDiff(10.6));
+console.log("esercizio 3 :", "se 39 : ", crazyDiff(39), "se 10 : ", crazyDiff(10));
 //------------------------------------------
 
 /* ESERCIZIO 4
@@ -147,17 +147,18 @@ console.log(reverseString("EPICODE").toString());
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const UpperFirst = function (str1) {
-  str2 = str1.split(" ");
-  for (i = 0; i < str2.length; i++) {
-    str2[i][0].toUpperCase();
-  }
-  return str2;
-};
+// const UpperFirst = function (str1) {
+//   str2 = str1.split(" ");
+//   for (i = 0; i < str2.length; i++) {
+//     str2[i].toUpperCase();
+//   }
+//   return str2;
+// };
 
-console.log(UpperFirst("questa è una frase"));
-
-// console.log(UpperFirst("sto cazzo"));
+// console.log(UpperFirst("questa è una frase"));
+str1 = "questa è una frase";
+str2 = str1.split(" ");
+console.log();
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
